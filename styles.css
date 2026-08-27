@@ -5,7 +5,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Roboto Sans;
+  font-family: "Lexend", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .trade-winds-regular {
@@ -13,6 +17,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.lexend-lexendreg {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 a{
     text-decoration: none;
@@ -22,6 +34,7 @@ a{
 
 body{
     overflow-x: hidden;
+    
 }
 #head{
     background-color: black;
@@ -78,6 +91,7 @@ body{
     gap: 10px;
     align-items: center;
     padding: 10px;
+    font-family: "Lexend", sans-serif;
 }
 
 .hero-image-container{
@@ -137,6 +151,7 @@ body{
 .section-header h2{
     font-size: 50px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .section-header p{
@@ -269,7 +284,7 @@ body{
 
 .career-card:hover{
     transform: scale(1.05);
-    box-shadow: 10px 10px 10px  rgba(255, 83, 83, 0.35);
+    box-shadow: 10px 10px 5px  rgba(255, 83, 83, 0.35);
 }
 
 .career-img{
@@ -298,7 +313,7 @@ body{
 }
 
 .career-text h3{
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 30px;
 }
 
@@ -309,4 +324,72 @@ body{
 
 .text-bold{
     font-weight: bold;
+}
+
+#about{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 700px;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
+.about-container{
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 2px solid red;
+    min-width: 340px;
+    max-width: 700px;
+    height: 80px;
+    padding: 5px;
+}
+
+.about-container p{
+    color: white;
+}
+
+.about-container img{
+    height: auto;
+    width: 130px;
+    position: absolute;
+    left: 110px;
+    top: 6px;
+}
+
+.container-title{
+    font-size: 1.2em;
+    text-shadow: 0 0 10px red;
+}
+
+.container-content{
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 1.5em;
+}
+
+.name-container{
+    grid-column: 1 / span 2;
+}
+
+.id-container{
+    grid-column: 3/ span 2  ;
+}
+
+.rank-container{
+    grid-column: 1 / span 2;
+    position: relative;
 }
