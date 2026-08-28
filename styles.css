@@ -253,7 +253,6 @@ body{
     margin: auto;
     anchor-name: --career-container;
     scroll-snap-type: x mandatory;
-    border: 2px solid red;
 }
 
 
